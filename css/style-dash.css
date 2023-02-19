@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: 'El Messiri', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0 auto;
+    max-width: 2000px;
+}
+header{
+    height:  80px;
+    background-color: #48487F;
+    box-shadow: 0 0 10px;
+    z-index: 3;
+}
+#header-div{
+    height: 70px;
+    background-color: #70C3D9;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+header div img{
+    height: 52.8109px;
+}
+#search_bar_parent{
+    width: 70%;
+    max-width: 600px;
+    padding: 0 2%;
+}
+#search_bar{
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+    height: 43px;
+    width: 100%;
+}
+#search_bar button{
+    border: none;
+    border-radius: 10px 0 0px 10px;
+    font-size: 30px;
+    color: #3A4145;
+    padding: 0 10px;
+    background-color: white;
+}
+#search_bar button:hover{
+    background-color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+#search_bar input{
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    padding-right: 15px;
+    width: 100%;
+}
+header div div{
+    margin: auto 0;
+    height: fit-content;
+    padding: 0;
+}
+#user i{
+    font-size: 45px;
+    color: white;
+}
+#user_button{
+    z-index: 2;
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+#user{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+#user p{
+    align-content: center;
+    height: fit-content;
+    margin: auto 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+@keyframes poping{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+#sign_in{
+    position: absolute;
+    width: 344px ;
+    height: 387.2325px ;
+    left: -34;
+    top: 5;
+    background-color: rgb(255, 255, 255);
+    border: #48487F solid 3px;
+    z-index: 1;
+    clip-path: polygon(0 16%, 11% 16%, 17% 9%, 23% 16%, 100% 16%, 100% 100%, 0 100%);
+    padding: 90px 20px 0 20px;
+    display: none;
+    animation: poping;
+    animation-duration: 0.5s;
+}
+#sign_in p{
+    color: #333333;
+    font-size: 35px;
+    text-align: center;
+}
+#sign_in div{
+    background-color: unset;
+    flex-direction: row-reverse;
+    margin: 5px 0 15px 0;
+}
+#sign_in form{
+    justify-content: center;
+    align-items: stretch;
+}
+#sign_in input{
+    width: 100%;
+    height: 41.316px ;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+#sign_in button{
+    margin: 0 auto;
+    display: block;
+    width: 131px;
+    height: 41.3px;
+    background-color: #48487F;
+    font-size: 20px;
+}
+#sign_in a{
+    color: #48487F;
+}
+#sign_in a:hover{
+    color: #70C3D9;
+}
+#sign_in button:hover{
+    background-color: #5959a0;
+}
+.nav-link,.dropdown-item{
+    font-size: 20px;
+    color: #3A4145;
+    padding: 5px;
+}
+@media screen and (min-width:1500px){
+    .nav-link,.dropdown-item{
+        font-size: 1.75em;
+    }
+}
+.nav-link:hover,.dropdown-item:hover{
+    background-color: #f0f0f0;
+}
+.nav-item{
+    padding: 0 10px;
+}
+a.nav-link.dropdown-toggle::after{
+    display: none;
+}
+#mobile_side_btn_x,#mobile_side_btn{
+    border: none;
+    background-color:transparent;
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+
+#sidemenu_mobile{
+    background-color: #48487F;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 360px;
+    animation-name: sliding;
+    animation-duration: 0.8s;
+    padding: 0 10px 10px 10px;
+    z-index: 4;
+    padding-bottom:40px ;
+    display: none;
+}
+#menu-mobile button{
+    display: block;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding-right: 10px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+#menu-mobile button:hover{
+    background: linear-gradient(to top,rgba(255, 245, 245, 0.3),transparent);
+    border-bottom: px solid white;
+}
+#menu-mobile{
+    overflow-y: scroll;
+    height: 70vh;
+}
+::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+#sidemenu_user{
+    color: white;
+    text-align: center;
+    margin: 40px 0px;
+    background-color: transparent;
+}
+#sidemenu_user i{
+    font-size: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#sidemenu_user a{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#sidemenu_user p{
+    text-align: center;
+}
+#sidemenu_mobile ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#sidemenu_mobile li:hover{
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255,0.2));
+}
+#sidemenu_mobile ul li a{
+    font-size: 25px;
+    padding-right: 10px;
+}
+#mobile_dropdown_btn{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
+}
+#mobile_dropdown_btn i{
+    font-size: 25px;
+}
+#menu-mobile,#mobile-dropdown{
+    padding: 0;
+}
+#menu-mobile a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes sliding{
+    from{left:-360px;}
+    to{left: 0;}
+}
+#main{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+/* header responsive media code for phones/tablets  */
+@media screen and (max-width:601px){
+    ul{
+        background-color: #48487F;
+    }
+    nav, #search_bar, #user{
+        display: none;
+    }
+    #mobile_side_btn{
+        display: unset;
+    }
+    header div{
+        padding: 0 10px;
+    }
+    aside{
+        display: none;
+    }
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+aside{
+    background-color: #48487F;
+    height: 100vh;
+    padding: 30px 0;
+}
+aside a i{
+    color: white;
+}
+aside ul{
+    list-style: none;
+    padding: 0;
+}
+aside li{
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+
+}
+aside button,#menu-mobile button{
+    display: block;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding-right: 10px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+aside button:hover{
+    background: linear-gradient(to top,rgba(255, 245, 245, 0.3),transparent);
+    border-bottom: px solid white;
+}
+main{
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+#dashpages-holder{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+
+}
+#dashpages-holder embed{
+    width: 100%;
+    min-height: 100vh;
+}
